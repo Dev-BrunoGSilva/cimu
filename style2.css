@@ -1,0 +1,79 @@
+@import url('./style.css');
+
+section:nth-child(1) .apresentacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+section:nth-child(1) .apresentacao h1{
+    font-size: 3rem;
+    text-wrap: nowrap;
+}
+
+section:nth-child(1) img{
+    width: 30rem;
+}
+
+section:nth-child(1) .butao-teste{
+    display: flex;
+}
+
+section:nth-child(1) .apresentacao .lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.8rem;
+    max-width: 22rem;
+    padding: 0.5rem;
+}
+
+section:nth-child(1) .apresentacao .lista span{
+    margin-bottom: 1rem;
+}
+
+section:nth-child(1) .apresentacao .lista span h1:nth-child(2), section:nth-child(1) .apresentacao .lista span h1:nth-child(3){
+    margin-top: -1.5rem;
+}
+
+section:nth-child(1) .apresentacao .lista ul{
+    margin-bottom: 1rem;
+}
+
+section:nth-child(1) .apresentacao .lista ul li{
+    margin-left: 1.5rem;
+}
+
+section:nth-child(1) .apresentacao .lista .butao-teste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(1) .apresentacao .lista .butao-teste p{
+    font-weight: 600;
+}
+
+section:nth-child(1) .apresentacao .lista .butao-teste img{
+    width: 2rem;
+}
+
+section:nth-child(1) .apresentacao .lista .butao-teste button{
+    background-color: #4CA28B;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+section:nth-child(1) .patrocinadores{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(1) .patrocinadores h5{
+    font-size: 1.5rem;
+}
