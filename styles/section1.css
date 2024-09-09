@@ -101,3 +101,66 @@ section:nth-child(1) .patrocinadores .titulo h5{
     text-wrap: nowrap;
     font-size: 1.5rem;
 }
+
+.carousel-container {
+    width: 100%;
+    margin: 0 8rem;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+  }
+
+  .carousel {
+    display: flex;
+    padding: 1rem;
+    animation: slide 15s linear infinite;
+  }
+
+  .carousel img {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .carousel:hover {
+    animation-play-state: paused;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .icon i {
+    font-size: 24px;
+    color: white;
+  }

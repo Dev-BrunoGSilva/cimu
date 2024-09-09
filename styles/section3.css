@@ -1,0 +1,44 @@
+@import url('./global.css');
+
+section:nth-child(3) .apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+section:nth-child(3) .apresentacao .card-group{
+    display: flex;
+    gap: 1rem;
+}
+
+section:nth-child(3) .apresentacao h1 {
+    font-size: 2rem;
+    text-wrap: nowrap;
+}
+
+section:nth-child(3) .apresentacao .card{
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+section:nth-child(3) .apresentacao .card h5{
+    font-size: 1.5rem;
+}
+
+section:nth-child(3) .apresentacao .card h6:first-of-type{
+    font-size: 1rem;
+}
+
+section:nth-child(3) .apresentacao .card h6:last-of-type{
+    font-size: 1.2rem;
+}
+
+section:nth-child(3) .apresentacao .card button{
+    margin: 1rem 0;
+}
