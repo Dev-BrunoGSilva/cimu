@@ -68,6 +68,7 @@ section:nth-child(1) .apresentacao .lista .butao-teste button{
 
 section:nth-child(1) .patrocinadores{
     width: 100%;
+    margin: 5rem 0;
     position: relative;
     display: flex;
     flex-direction: column;

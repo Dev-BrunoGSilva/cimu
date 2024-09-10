@@ -1,0 +1,24 @@
+@import url('./global.css');
+
+section:nth-child(4) .apresentacao, section:nth-child(4) .apresentacao .duvidas .link{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+section:nth-child(4) .apresentacao .duvidas{
+    display: flex;
+}
+
+section:nth-child(4) .apresentacao .duvidas .link {
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+section:nth-child(4) .apresentacao .duvidas .link p {
+    margin: 0.5rem 0;
+    border-bottom: 1px solid black;
+}

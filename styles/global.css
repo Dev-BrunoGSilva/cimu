@@ -2,6 +2,7 @@
 @import url('./section1.css');
 @import url('./section2.css');
 @import url('./section3.css');
+@import url('./section4.css');
 
 *{
     margin: 0;
@@ -59,7 +60,8 @@ header nav a img{
 }
 
 section{
-    height: 100vh;
+    height: 100%;
+    margin: 5rem 0;
 }
 
 button{
@@ -77,4 +79,9 @@ button:hover{
     cursor: pointer;
     outline: 1px solid #4CA28B;
     outline-offset: 1px;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
 }
