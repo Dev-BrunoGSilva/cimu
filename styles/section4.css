@@ -1,12 +1,16 @@
 @import url('./global.css');
 
-section:nth-child(4) .apresentacao, section:nth-child(4) .apresentacao .duvidas .link{
+section:nth-child(4) .apresentacao, section:nth-child(4) .apresentacao .duvidas .link,.teste-gratis{
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0.8rem;
+}
+
+section:nth-child(4) .apresentacao p{
+    margin: 0.8rem 0;
 }
 
 section:nth-child(4) .apresentacao .duvidas{
@@ -21,4 +25,30 @@ section:nth-child(4) .apresentacao .duvidas .link {
 section:nth-child(4) .apresentacao .duvidas .link p {
     margin: 0.5rem 0;
     border-bottom: 1px solid black;
+}
+
+section:nth-child(4) .apresentacao .duvidas .link p span img{
+    width: 1rem;
+    margin-top: -3.5rem;
+}
+
+section:nth-child(4) .teste-gratis{
+    margin-top: 10rem;
+}
+
+section:nth-child(4) .teste-gratis h1{
+    font-size: 2rem;
+    text-wrap: nowrap;
+}
+
+section:nth-child(4) .teste-gratis h5{
+    text-wrap: nowrap;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section:nth-child(4) .teste-gratis button{
+    margin: 1rem 0;
+    background-color: #4CA28B;
+    color: white;
 }
