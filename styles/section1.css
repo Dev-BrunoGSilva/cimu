@@ -8,7 +8,7 @@ section:nth-child(1) .apresentacao{
 }
 
 section:nth-child(1) .apresentacao h1{
-    font-size: 3rem;
+    font-size: 3rem; 
     text-wrap: nowrap;
 }
 
@@ -62,8 +62,15 @@ section:nth-child(1) .apresentacao .lista .butao-teste img{
 
 section:nth-child(1) .apresentacao .lista .butao-teste button{
     background-color: #4CA28B;
-    color: white;
     margin-right: 0.5rem;
+}
+
+section:nth-child(1) .apresentacao .lista .butao-teste button a{
+  color: white;
+}
+
+section:nth-child(1) .apresentacao .imagem{
+  position: relative;
 }
 
 section:nth-child(1) .patrocinadores{
@@ -117,9 +124,14 @@ section:nth-child(1) .patrocinadores .titulo h5{
   }
 
   .carousel img {
+    filter: grayscale(1);
     width: 150px;
     height: auto;
     margin: 0 10px;
+  }
+  
+  .carousel img:hover{
+    filter: grayscale(0);
   }
 
   @keyframes slide {
@@ -135,21 +147,32 @@ section:nth-child(1) .patrocinadores .titulo h5{
     animation-play-state: paused;
   }
 
-  .icon-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-  }
-
   .icon {
-    width: 50px;
-    height: 50px;
-    background-color: #3498db;
-    border-radius: 50%;
+    position: absolute;
+    width: 6rem;
+    height: 5rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: #4CA28B;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: float 3s ease-in-out infinite;
+  }
+
+  .icon{
+    top: 20rem;
+    left: 0;
+  }
+  
+  .icon:nth-child(2){
+    top: 19rem;
+    left: 25rem;
+  }
+  
+  .icon:nth-child(3){
+    top: 3rem;
+    left: 0;
   }
 
   @keyframes float {

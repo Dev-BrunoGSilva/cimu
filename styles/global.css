@@ -26,7 +26,7 @@ header, section{
 header{
     display: flex;
     justify-content: space-around;
-    padding: 1rem 0.5rem;
+    padding: 0.8rem 2.8rem;
 }
 
 header img{
@@ -72,16 +72,22 @@ button{
     background-color: #ffffff;
     border: 1px solid #4CA28B;
     border-radius: 0.2rem;
+}
+
+button a{
     font-weight: 600;
     color: #4CA28B;
 }
 
 button:hover{
     background-color: #4CA28B;
-    color: white;
     cursor: pointer;
     outline: 1px solid #4CA28B;
     outline-offset: 1px;
+}
+
+button:hover a{
+    color: white;
 }
 
 footer{
@@ -142,4 +148,13 @@ footer .form-footer .logo-redesocial .redesocial img{
     width: 1.5rem;
     height: 1.5rem;
     margin: 0 0.3rem;
+}
+
+.button-entrar{
+    width: 8rem;
+    background-color: #4CA28B;
+}
+
+.button-entrar a{
+    color: white;
 }
