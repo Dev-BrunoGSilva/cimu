@@ -14,25 +14,51 @@ section:nth-child(4) .apresentacao p{
 
 section:nth-child(4) .apresentacao .duvidas{
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 section:nth-child(4) .apresentacao .duvidas .link {
     padding: 1rem;
+    justify-content: center;
     align-items: flex-start;
 }
 
-section:nth-child(4) .apresentacao .duvidas .link p {
-    margin: 0.5rem 0;
-    border-bottom: 1px solid black;
+section:nth-child(4) .apresentacao .duvidas .link:first-of-type .pergunta:nth-child(4),
+section:nth-child(4) .apresentacao .duvidas .link:first-of-type .pergunta:nth-child(7)
+{
+    margin: 0.8rem 0;
 }
 
-section:nth-child(4) .apresentacao .duvidas .link p span img{
-    width: 1rem;
-    margin-top: -3.5rem;
+section:nth-child(4) .apresentacao .duvidas .link .pergunta{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+section:nth-child(4) .apresentacao .duvidas .link .pergunta p {
+    overflow: hidden;
+    font-size: 16px;
+    margin: 0.5rem 0;
+}
+
+section:nth-child(4) .apresentacao .duvidas .link .divisoria{
+    width: 100%;
+    border-bottom: 1px solid rgb(103, 103, 103);    
+}
+
+section:nth-child(4) .apresentacao .duvidas .link .pergunta img{
+    cursor: pointer;
+    width: 1.2rem;
+    height: 1.1rem;
+    object-fit: cover;
+    margin-top: -0.1rem;
 }
 
 section:nth-child(4) .teste-gratis{
-    margin-top: 4rem;
+    margin: 10rem 0;
 }
 
 section:nth-child(4) .teste-gratis h1{
@@ -53,4 +79,10 @@ section:nth-child(4) .teste-gratis button{
 
 section:nth-child(4) .teste-gratis button a{
     color: white;
+}
+
+.descricao{
+    display: none;
+    transition: 5ms ease-in-out;
+    font-size: 16px;
 }

@@ -99,7 +99,7 @@ footer{
     background-color: black;
 }
 footer .divisoria{
-    width: 65rem;
+    width: 100%;
     height: 2px;
     background-color: white;
 }
@@ -157,4 +157,63 @@ footer .form-footer .logo-redesocial .redesocial img{
 
 .button-entrar a{
     color: white;
+}
+
+
+@media only screen and (max-width: 320px) {
+    /* Seu CSS para celulares pequenos */
+    /* section{
+        background-color: red;
+    } */
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* Seu CSS para celulares */
+    header nav{
+        display: none;
+    }
+
+    section .apresentacao , .card-group{
+        flex-direction: column;
+    }
+    
+    /* section{
+        background-color: blue;
+    } */
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Seu CSS para tablets */
+    header nav{
+        display: none;
+    }
+
+    section .apresentacao , .card-group{
+        flex-direction: column;
+    }
+
+    /* section{
+        background-color: yellow;
+    } */
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Seu CSS para laptops e telas médias */
+
+    header button{
+        display: none;
+    }
+
+    /* section{
+        background-color: green;
+    } */
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* Seu CSS para telas grandes */
+    /* section{
+        background-color: purple;
+    } */
+}
+@media only screen and (min-width: 1201px) {
+    /* Seu CSS para desktops grandes */
+    /* section{
+        background-color: slateblue;
+    } */
 }

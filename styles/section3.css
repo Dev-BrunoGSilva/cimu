@@ -32,17 +32,14 @@ section:nth-child(3) .apresentacao .card{
 
 section:nth-child(3) .apresentacao .card:nth-child(2){
     z-index: 3;
-    scale: 1.1;
 }
 
 section:nth-child(3) .apresentacao .card:nth-child(1){
     z-index: 2;
-    scale: 1.1;
 }
 
 section:nth-child(3) .apresentacao .card:nth-child(3){
     z-index: 1;
-    scale: 1.1;
 }
 
 section:nth-child(3) .apresentacao .card:hover{
@@ -50,11 +47,11 @@ section:nth-child(3) .apresentacao .card:hover{
 }
 
 section:nth-child(3) .apresentacao .card h5{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 section:nth-child(3) .apresentacao .card h6:first-of-type{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 section:nth-child(3) .apresentacao .card h6:last-of-type{
