@@ -166,20 +166,73 @@ footer .form-footer .logo-redesocial .redesocial img{
         background-color: red;
     } */
 }
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     /* Seu CSS para celulares */
-    header nav{
+    header div img{
+        margin-right: 0;
+    }
+
+    header nav, section .apresentacao .imagem .icon{
         display: none;
+    }
+
+    .carousel img{
+        width: 8.5rem !important;
     }
 
     section .apresentacao , .card-group{
         flex-direction: column;
+    }
+
+    section .apresentacao .imagem{
+        margin: 1rem 0;
+    }
+
+    section .apresentacao .imagem img{
+        width: 20rem;
+        margin-left: 0;
+    }
+
+    .apresentacao{
+        padding: 1rem 2rem !important;
+    }
+
+    section .teste-gratis{
+        margin: 10rem 0;
+    }
+
+    h1,h5,h6,p{
+        text-wrap: wrap !important;
+    }
+
+    section:nth-child(4) .teste-gratis h1{
+        font-size: 1.3rem !important;
+    }
+
+    section:nth-child(4) .teste-gratis{
+        margin: 1rem 0;
+    }
+
+    section:not(section:first-of-type){
+        margin: 0;
+    }
+
+    section:nth-child(1) .patrocinadores .titulo h5{
+        text-wrap: nowrap !important;
+    }
+
+    footer .contatos, .form-footer{
+        height: auto !important;
+        flex-direction: column !important;
+        gap: 0 !important;
     }
     
     /* section{
         background-color: blue;
     } */
 }
+
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     /* Seu CSS para tablets */
     header nav{
@@ -194,23 +247,34 @@ footer .form-footer .logo-redesocial .redesocial img{
         background-color: yellow;
     } */
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     /* Seu CSS para laptops e telas médias */
 
+    header nav{
+        display: none;
+    }
+
     header button{
         display: none;
+    }
+
+    .apresentacao{
+        padding: 1rem 2rem !important;
     }
 
     /* section{
         background-color: green;
     } */
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     /* Seu CSS para telas grandes */
     /* section{
         background-color: purple;
     } */
 }
+
 @media only screen and (min-width: 1201px) {
     /* Seu CSS para desktops grandes */
     /* section{
