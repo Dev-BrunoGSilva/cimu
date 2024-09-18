@@ -159,6 +159,8 @@ footer .form-footer .logo-redesocial .redesocial img{
     color: white;
 }
 
+.slide-right{-webkit-animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both}
+
 
 @media only screen and (max-width: 320px) {
     /* Seu CSS para celulares pequenos */
