@@ -11,7 +11,7 @@
     text-decoration: none;
     color: black;
     font-family: "Poppins", sans-serif;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body{
@@ -27,6 +27,10 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 0.8rem 2.8rem;
+}
+
+.responsive-menu{
+    display: none;
 }
 
 header img{
@@ -159,7 +163,38 @@ footer .form-footer .logo-redesocial .redesocial img{
     color: white;
 }
 
-.slide-right{-webkit-animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both}
+.slide-right{
+    -webkit-animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) 2s both;
+    animation: slide-right .5s cubic-bezier(.25,.46,.45,.94) 2s both
+}
+
+ @-webkit-keyframes slide-right {
+    0% {
+        opacity: 0;
+      -webkit-transform: translateX(-900px);
+              transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transition: 0.5ms ease-in;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+        opacity: 0;
+      -webkit-transform: translateX(-900px);
+              transform: translateX(-900px);
+    }
+    100% {
+        opacity: 1;
+        transition: 0.5ms ease-in;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
 
 
 @media only screen and (max-width: 320px) {
@@ -173,6 +208,15 @@ footer .form-footer .logo-redesocial .redesocial img{
     /* Seu CSS para celulares */
     header div img{
         margin-right: 0;
+    }
+
+    .responsive-menu{
+        display: none;
+    }
+
+    header{
+        align-items: center;
+        justify-content: space-between;
     }
 
     header nav, section .apresentacao .imagem .icon{
