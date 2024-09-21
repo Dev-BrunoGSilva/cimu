@@ -38,3 +38,41 @@
     padding: 0 2rem;
     margin: 1rem 0;
 }
+
+#beneficios h5, #beneficios h1{
+    background-color: #cdcdcd;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.card{
+    width: 100%;
+}
+
+.teste-gratis h5{
+    font-size: 1.5rem;
+}
+
+.teste-gratis h1{
+    font-size: 2.5rem;
+    max-width: 45.5rem;
+}
+
+.teste-gratis button{
+    background-color: #4CA28B;
+}
+
+.teste-gratis button a{
+    color: white;
+}
+
+.teste-gratis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    gap: 1rem;
+}

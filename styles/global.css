@@ -346,6 +346,10 @@ footer .form-footer .logo-redesocial .redesocial img{
         font-size: 1.1rem !important;
     }
 
+    #duvidas{
+        text-align: start;
+    }
+
     #duvidas h5{
         font-size: 1.5rem !important;
     }
@@ -361,6 +365,10 @@ footer .form-footer .logo-redesocial .redesocial img{
     }
     .butao-teste p{
         margin-right: 2.5rem;
+    }
+
+    .card h5{
+        text-align: start !important;
     }
     /* section{
         background-color: blue;
