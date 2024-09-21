@@ -210,6 +210,10 @@ footer .form-footer .logo-redesocial .redesocial img{
         margin-right: 0;
     }
 
+    section:nth-child(2) .apresentacao{
+        gap: 1rem !important;
+    }
+
     .carousel-container{
         margin: 0 2rem;
     }
@@ -350,6 +354,13 @@ footer .form-footer .logo-redesocial .redesocial img{
         padding: 1rem;
         font-size: 1.5rem !important;
         line-height: 32px !important;
+    }
+
+    .butao-teste button{
+        width: 100%;
+    }
+    .butao-teste p{
+        margin-right: 2.5rem;
     }
     /* section{
         background-color: blue;

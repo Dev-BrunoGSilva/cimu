@@ -29,3 +29,12 @@
 .pergunta img{
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(109%) contrast(103%);
 }
+
+#beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.8rem;
+    padding: 0 2rem;
+    margin: 1rem 0;
+}
