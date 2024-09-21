@@ -113,7 +113,7 @@ section:nth-child(1) .patrocinadores .titulo h5 {
 
 .carousel-container {
   width: 100%;
-  margin: 0 2rem;
+  margin: 0 8rem;
   overflow: hidden;
   border-bottom: 2px solid black;
 }

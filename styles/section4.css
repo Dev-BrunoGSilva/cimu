@@ -1,88 +1,31 @@
 @import url('./global.css');
 
-section:nth-child(4) .apresentacao, section:nth-child(4) .apresentacao .duvidas .link,.teste-gratis{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#duvidas{
+    text-align: center;
+    padding: 0 4rem;
 }
 
-section:nth-child(4) .apresentacao p{
-    margin: 0.8rem 0;
+#duvidas h1{
+    font-size: 2rem !important;
 }
 
-section:nth-child(4) .apresentacao .duvidas{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-section:nth-child(4) .apresentacao .duvidas .link {
-    padding: 1rem;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-section:nth-child(4) .apresentacao .duvidas .link:first-of-type .pergunta:nth-child(4),
-section:nth-child(4) .apresentacao .duvidas .link:first-of-type .pergunta:nth-child(7)
-{
-    margin: 0.8rem 0;
-}
-
-section:nth-child(4) .apresentacao .duvidas .link .pergunta{
-    width: 100%;
+.pergunta{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0.8rem;
-}
-
-section:nth-child(4) .apresentacao .duvidas .link .pergunta p {
-    overflow: hidden;
-    font-size: 16px;
-    margin: 0.5rem 0;
-}
-
-section:nth-child(4) .apresentacao .duvidas .link .divisoria{
-    width: 100%;
-    border-bottom: 1px solid rgb(103, 103, 103);    
-}
-
-section:nth-child(4) .apresentacao .duvidas .link .pergunta img{
-    cursor: pointer;
-    width: 1.2rem;
-    height: 1.1rem;
-    object-fit: cover;
-    margin-top: -0.1rem;
-}
-
-section:nth-child(4) .teste-gratis{
-    margin: 10rem 0;
-}
-
-section:nth-child(4) .teste-gratis h1{
-    font-size: 2rem;
-    text-wrap: nowrap;
-}
-
-section:nth-child(4) .teste-gratis h5{
-    text-wrap: nowrap;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-section:nth-child(4) .teste-gratis button{
-    margin: 1rem 0;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
     background-color: #4CA28B;
+
+    margin: 0.5rem 0;
+    cursor: pointer;
 }
 
-section:nth-child(4) .teste-gratis button a{
-    color: white;
+.pergunta p{
+    color: whitesmoke;
+    font-weight: bold;
 }
 
-.descricao{
-    display: none;
-    transition: 5ms ease-in-out;
-    font-size: 16px;
+.pergunta img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(109%) contrast(103%);
 }
