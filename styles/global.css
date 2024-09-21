@@ -211,7 +211,14 @@ footer .form-footer .logo-redesocial .redesocial img{
     }
 
     .carousel-container{
-        margin: 0 3rem;
+        margin: 0 2rem;
+    }
+
+    .card-group{
+        padding: 0 1rem;
+    }
+    .card{
+        width: 100%;
     }
 
     #duvidas{
@@ -220,7 +227,7 @@ footer .form-footer .logo-redesocial .redesocial img{
 
     .responsive-menu{
         display: none;
-    }/
+    }
 
     header{
         align-items: center;
@@ -246,6 +253,20 @@ footer .form-footer .logo-redesocial .redesocial img{
     section .apresentacao .imagem img{
         width: 20rem;
         margin-left: 0;
+    }
+
+    h1{
+        font-size: 2.2rem !important;
+        line-height: 40px !important;
+    }
+
+    h5{
+        text-align: center;
+        font-size: 1.1rem !important;
+    }
+
+    button a{
+        text-wrap: nowrap !important;
     }
 
     .apresentacao{
