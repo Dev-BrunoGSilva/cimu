@@ -9,7 +9,7 @@ section:nth-child(1) .apresentacao {
 
 section:nth-child(1) .apresentacao h1 {
   font-size: 3rem;
-  text-wrap: nowrap;
+  text-wrap: wrap !important;
 }
 
 section:nth-child(1) img {
