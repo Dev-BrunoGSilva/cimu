@@ -323,6 +323,11 @@ footer .form-footer .logo-redesocial .redesocial img{
         gap: 0 !important;
     }
 
+    footer .form-footer .navegacao{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     footer .form-footer .logo-redesocial{
         margin-bottom: 1rem;
         width: 100%;
