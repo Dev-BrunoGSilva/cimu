@@ -40,15 +40,18 @@
 }
 
 #beneficios h5, #beneficios h1{
-    background-color: #cdcdcd;
-    padding: 0.5rem 1rem;
+    width: 100%;
+    color: white;
+    background-color: #4CA28B;
+    padding: 0.1rem 1rem;
     border-radius: 0.2rem;
     margin: 0.5rem 0;
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
 }
 
 .card{
     width: 100%;
+    padding: 0.5rem;
 }
 
 .teste-gratis h5{
