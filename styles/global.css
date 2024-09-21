@@ -231,6 +231,7 @@ footer .form-footer .logo-redesocial .redesocial img{
     }
 
     .responsive-menu{
+        width: 0;
         display: block;
         cursor: pointer;
     }
@@ -368,6 +369,13 @@ footer .form-footer .logo-redesocial .redesocial img{
         line-height: 32px !important;
     }
 
+    .header-menu{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .butao-teste button{
         width: 100%;
     }
@@ -434,4 +442,29 @@ footer .form-footer .logo-redesocial .redesocial img{
     /* section{
         background-color: slateblue;
     } */
+}
+
+
+/* Escondendo o checkbox */
+#menu-toggle {
+  display: none;
+  width: 11rem;
+}
+
+/* Estilo para o menu */
+nav {
+  display: none; /* Menu oculto inicialmente */
+}
+
+/* Quando o checkbox estiver marcado, mostrar o menu */
+#menu-toggle:checked + label + nav {
+  display: block; /* Menu visível quando o menu-toggle está ativo */
+}
+
+/* Estilize o menu para o modo mobile */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
