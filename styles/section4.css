@@ -52,9 +52,12 @@
 #beneficios .card-bene:first-of-type p{
     margin: 0.5rem 0 !important;
 }
+#beneficios .card-bene p{
+    text-wrap: wrap !important;
+    margin: 0.5rem 0 !important;
+}
 
 #beneficios h5{
-  width: 25rem;
   color: white;
 
   background-color: #4ca28b;
