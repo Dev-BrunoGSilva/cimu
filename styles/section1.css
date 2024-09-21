@@ -20,6 +20,12 @@ section:nth-child(1) .butao-teste {
   display: flex;
 }
 
+section:nth-child(1) .butao-teste div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 section:nth-child(1) .apresentacao .lista {
   display: flex;
   flex-direction: column;
