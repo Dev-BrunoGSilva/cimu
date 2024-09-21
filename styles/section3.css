@@ -28,7 +28,7 @@ section:nth-child(3) .apresentacao h1 {
     flex-direction: column;
     border-radius: 0.25rem;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px 0px black;
+    box-shadow: 0 0 5px 0px black;
     padding: 1.5rem;
   }
   
