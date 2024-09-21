@@ -86,6 +86,10 @@ section:nth-child(3) .apresentacao h1 {
     color: #4CA28B !important;
     fill: #4CA28B !important;
   }
+
+  .descricao{
+    display: none;
+  }
   
   .action {
     border: none;
