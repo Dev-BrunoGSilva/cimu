@@ -11,19 +11,14 @@
 
 <body>
   <header>
-    <div class="header-menu">
+    <div>
       <img src="./assets/images/logo-cimu.png" alt="logo" />
-
-      <!-- Checkbox para controlar o menu responsivo -->
-      <input type="checkbox" id="menu-toggle" style="opacity: 0;" />
-      <label for="menu-toggle" class="responsive-menu">
-        <img src="./assets/icons/menu.png" alt="Menu">
-      </label>
     </div>
-
-    <!-- O menu de navegação -->
-    <nav>
-      <a href="http://">
+    <!-- <div class="responsive-menu">
+      <img id="menu-icon" style="width: 3.5rem;" src="./assets/icons/menu.png" alt="Menu">
+    </div> -->
+    <nav id="nav-menu">
+      <a href="#beneficios">
         Benefícios
         <img style="width: 2rem" src="./assets/icons/navigate_next.png" alt="navigate" />
       </a>
@@ -31,7 +26,7 @@
         Planos
         <img style="width: 2rem" src="./assets/icons/navigate_next.png" alt="navigate" />
       </a>
-      <div>
+      <div id="buttons">
         <button class="button-entrar">
           <a href="http://app.cimu.com.br/sign-in">Entrar</a>
         </button>
@@ -41,6 +36,7 @@
       </div>
     </nav>
   </header>
+
 
 
   <main>
@@ -756,6 +752,21 @@
   </footer>
 
   <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navMenu = document.getElementById('nav-menu');
+
+    // Função para abrir/fechar o menu ao clicar no ícone
+    menuIcon.addEventListener('click', function () {
+      navMenu.classList.toggle('active');
+    });
+
+    // Função para fechar o menu se clicar fora dele
+    document.addEventListener('click', function (event) {
+      if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+        navMenu.classList.remove('active');
+      }
+    });
+
     function toggleAnswer(id) {
       var descricao = document.getElementById("descricao-" + id);
 

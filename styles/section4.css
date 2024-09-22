@@ -40,26 +40,26 @@
   flex-direction: column;
   align-items: start;
   gap: 1rem;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   margin: 1rem 0;
   background-color: #f2f2f267;
 }
 
-#beneficios .card-bene{
-    margin: 0.5rem 0 !important;
+#beneficios .card-bene {
+  margin: 0.5rem 0 !important;
 }
 
-#beneficios .card-bene:first-of-type p{
-    margin: 0.5rem 0 !important;
+#beneficios .card-bene:first-of-type p {
+  margin: 0.5rem 0 !important;
 }
-#beneficios .card-bene p{
-    text-wrap: wrap !important;
-    margin: 0.5rem 0 !important;
+#beneficios .card-bene p {
+  text-wrap: wrap !important;
+  margin: 0.5rem 0 !important;
 }
 
-#beneficios h5{
+#beneficios h5 {
+  text-align: start;
   color: white;
-
   background-color: #4ca28b;
   padding: 0.1rem 1rem;
   border-radius: 0.2rem;
@@ -67,8 +67,8 @@
   font-size: 1.1rem !important;
 }
 
-#beneficios p{
-    margin: 0 1rem;
+#beneficios p {
+  margin: 0 1rem;
 }
 
 .card {
