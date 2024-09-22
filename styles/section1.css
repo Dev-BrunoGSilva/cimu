@@ -137,6 +137,11 @@ section:nth-child(1) .patrocinadores .titulo h5 {
   margin: 0 10px;
 }
 
+.card-container{
+  display: flex;
+  gap: 0.8rem;
+}
+
 .carousel img:hover {
   filter: grayscale(0);
 }

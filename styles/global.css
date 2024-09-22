@@ -24,6 +24,10 @@ section {
   width: 100%;
 }
 
+section p {
+  color: black;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -91,6 +95,11 @@ button:hover a {
   color: white;
 }
 
+.navegacao{
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -109,7 +118,7 @@ footer .direitos h5 {
   margin: 0.5rem 0;
 }
 
-footer p {
+footer a, p {
   color: white;
 }
 
@@ -390,6 +399,14 @@ footer .form-footer .logo-redesocial .redesocial img {
 
   .card h5 {
     text-align: start !important;
+  }
+
+  .card-container{
+    flex-direction: column;
+  }
+
+  #beneficios{
+    padding: 0px 2rem;
   }
 
   .teste-gratis {

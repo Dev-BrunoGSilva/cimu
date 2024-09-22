@@ -5,7 +5,7 @@ section:nth-child(3) .apresentacao {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 5rem;
+    padding: 4rem 7rem;
     background-color: #f2f2f267;
 }
 
