@@ -238,6 +238,10 @@ footer .form-footer .logo-redesocial .redesocial img {
     padding: 0 0.2rem;
   }
 
+  .card-bene img{
+    width: 15rem !important;
+  }
+
   .responsive-menu {
     width: 0;
     display: block;
