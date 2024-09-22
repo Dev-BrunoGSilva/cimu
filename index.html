@@ -15,29 +15,27 @@
       <img src="./assets/images/logo-cimu.png" alt="logo" />
     </div>
     <!-- <div class="responsive-menu">
-      <img id="menu-icon" style="width: 3.5rem;" src="./assets/icons/menu.png" alt="Menu">
+      <img style="width: 3.5rem;" src="./assets/icons/menu.png" alt="">
     </div> -->
-    <nav id="nav-menu">
+    <nav>
       <a href="#beneficios">
-        Benefícios
+        Beneficios
         <img style="width: 2rem" src="./assets/icons/navigate_next.png" alt="navigate" />
       </a>
       <a href="#planos">
         Planos
         <img style="width: 2rem" src="./assets/icons/navigate_next.png" alt="navigate" />
       </a>
-      <div id="buttons">
+      <div>
         <button class="button-entrar">
           <a href="http://app.cimu.com.br/sign-in">Entrar</a>
         </button>
         <button>
-          <a href="http://app.cimu.com.br/sign-in">Teste Grátis</a>
+          <a href="http://app.cimu.com.br/sign-in">Teste Gratis</a>
         </button>
       </div>
     </nav>
   </header>
-
-
 
   <main>
     <section>
@@ -245,7 +243,7 @@
             </div>
             <p class="desc">Um plano semestral que oferece todos os recursos com um ótimo equilíbrio entre custo e
               compromisso, garantindo continuidade e crescimento.</p>
-            <div class="marcador"></div>
+              <div class="marcador"></div>
             <span class="price">R$39,90</span>
             <div class="tipo-plano">
               <span>Plano <b>semestral</b></span>
@@ -336,7 +334,7 @@
             </div>
             <p class="desc">O plano anual com todos os recursos disponíveis, oferecendo o melhor valor e suporte
               prolongado para maximizar seu investimento.</p>
-            <div class="marcador"></div>
+              <div class="marcador"></div>
             <span class="price">R$29,90</span>
             <div class="tipo-plano">
               <span>Plano <b>Anual</b> </span>
@@ -642,11 +640,10 @@
             consórcios. Com um conjunto robusto de funcionalidades, o CIMU atende tanto às necessidades de profissionais
             quanto de clientes, oferecendo uma visão clara e detalhada das melhores opções disponíveis no mercado.
           </p>
-
+  
           <p>
             O CIMU proporciona uma solução completa e flexível para profissionais de consórcio e clientes, facilitando a
-            comparação e escolha das melhores opções no mercado. Sua capacidade de configurar diversas simulações e
-            gerar
+            comparação e escolha das melhores opções no mercado. Sua capacidade de configurar diversas simulações e gerar
             propostas detalhadas torna o processo de decisão mais transparente e eficiente.
             Em resumo, o CIMU é a ferramenta definitiva para quem busca precisão e flexibilidade na simulação de
             consórcios,
@@ -668,8 +665,7 @@
         <div class="card-bene">
           <h5>Cálculo de Crédito Líquido</h5>
           <p>
-            Permite que o usuário insira o crédito líquido desejado e calcula automaticamente o valor do crédito que
-            deve
+            Permite que o usuário insira o crédito líquido desejado e calcula automaticamente o valor do crédito que deve
             ser
             contratado em cada administradora, respeitando as regras de lance e as particularidades de cada consórcio.
             Simulação com Número de Parcelas Pagas: O CIMU simula o impacto das parcelas pagas até a contemplação.
@@ -696,10 +692,8 @@
             Configuração Flexível
           </h5>
           <p>
-            Com acesso a mais de 30 administradoras, o CIMU permite que o usuário configure simulações de acordo com
-            suas
-            necessidades. É possível escolher e comparar várias empresas diferentes, bem como configurar múltiplos
-            planos
+            Com acesso a mais de 30 administradoras, o CIMU permite que o usuário configure simulações de acordo com suas
+            necessidades. É possível escolher e comparar várias empresas diferentes, bem como configurar múltiplos planos
             de
             uma mesma administradora ou de diferentes administradoras.
             Atualizações Constantes: O CIMU é atualizado regularmente para garantir que as simulações reflitam as
@@ -752,21 +746,6 @@
   </footer>
 
   <script>
-    const menuIcon = document.getElementById('menu-icon');
-    const navMenu = document.getElementById('nav-menu');
-
-    // Função para abrir/fechar o menu ao clicar no ícone
-    menuIcon.addEventListener('click', function () {
-      navMenu.classList.toggle('active');
-    });
-
-    // Função para fechar o menu se clicar fora dele
-    document.addEventListener('click', function (event) {
-      if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
-        navMenu.classList.remove('active');
-      }
-    });
-
     function toggleAnswer(id) {
       var descricao = document.getElementById("descricao-" + id);
 

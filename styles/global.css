@@ -218,9 +218,9 @@ footer .form-footer .logo-redesocial .redesocial img {
     margin: 0 2rem;
   }
 
-  .card-group {
+  /* .card-group {
     padding: 0 1rem;
-  }
+  } */
   .card {
     width: 100%;
   }
@@ -240,11 +240,11 @@ footer .form-footer .logo-redesocial .redesocial img {
     object-fit: cover;
   }
 
-  /* header {
+  header {
     padding: 0.8rem;
     align-items: center;
     justify-content: space-between;
-  } */
+  }
 
   header nav,
   section .apresentacao .imagem .icon {
@@ -449,3 +449,7 @@ footer .form-footer .logo-redesocial .redesocial img {
         background-color: slateblue;
     } */
 }
+
+/* *{
+    outline: 1px solid red;
+} */
