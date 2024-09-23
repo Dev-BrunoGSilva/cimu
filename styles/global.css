@@ -238,9 +238,9 @@ footer .form-footer .logo-redesocial .redesocial img {
     padding: 0 0.2rem;
   }
 
-  .card-bene img{
+  /* .card-bene img{
     width: 15rem !important;
-  }
+  } */
 
   .responsive-menu {
     width: 0;
@@ -369,6 +369,31 @@ footer .form-footer .logo-redesocial .redesocial img {
     gap: 0.5rem;
   }
 
+  footer .form-footer .logo-redesocial .redesocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  footer .form-footer .logo-redesocial a{
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  footer .form-footer .logo-redesocial a img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(209deg) brightness(109%) contrast(103%);
+  }
+
   .planosH {
     font-size: 1.1rem !important;
   }
@@ -466,11 +491,10 @@ footer .form-footer .logo-redesocial .redesocial img {
 
 @media only screen and (min-width: 1201px) {
   /* Seu CSS para desktops grandes */
+  #duvidas {
+    padding: 0 20rem;
+  }
   /* section{
         background-color: slateblue;
     } */
 }
-
-/* *{
-    outline: 1px solid red;
-} */
