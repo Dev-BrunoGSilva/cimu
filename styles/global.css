@@ -515,12 +515,19 @@ a .button-entrar {
   /* section{
         background-color: purple;
     } */
+    section:nth-child(3) .apresentacao{
+      padding: 4rem 15rem;
+    }
 }
 
 @media only screen and (min-width: 1201px) {
   /* Seu CSS para desktops grandes */
   #duvidas {
     padding: 0 20rem;
+  }
+
+  section:nth-child(3) .apresentacao{
+    padding: 4rem 15rem;
   }
   /* section{
         background-color: slateblue;

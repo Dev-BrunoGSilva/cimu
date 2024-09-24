@@ -53,7 +53,7 @@ section:nth-child(2) .apresentacao .lista .descricao h5 {
     text-align: center;
 }
 
-section:nth-child(2) .apresentacao .lista .descricao h5>span {
+section:nth-child(2) .apresentacao .lista .descricao h5 > span {
     margin: 0 0.1rem;
     color: #4CA28B;
 }
