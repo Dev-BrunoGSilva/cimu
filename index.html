@@ -18,6 +18,11 @@
     <a href="#beneficios">Beneficios</a>
     <a href="#duvidas">Duvidas</a>
     <a href="#contato">Contato</a>
+    <a href="http://app.cimu.com.br/sign-in">
+      <button class="button-entrar">
+        Entrar
+      </button>
+    </a>
   </div>
   <header>
     <div>
@@ -452,7 +457,7 @@
             <div class="duvida-caixa">
               <div class="pergunta" onclick="toggleAnswer(1)">
                 <p>O que é o CIMU?</p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-1"/>
               </div>
               <div class="divisoria"></div>
 
@@ -470,7 +475,7 @@
             <div class="duvida-caixa">
               <div class="pergunta" onclick="toggleAnswer(2)">
                 <p>Como o CIMU calcula os valores dos consórcios?</p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-2"/>
               </div>
               <div class="divisoria"></div>
 
@@ -488,7 +493,7 @@
                 <p>
                   O CIMU leva em conta as diferenças entre as administradoras?
                 </p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-3"/>
               </div>
               <div class="divisoria"></div>
 
@@ -505,7 +510,7 @@
             <div class="duvida-caixa">
               <div class="pergunta" onclick="toggleAnswer(4)">
                 <p>Como o CIMU trata o lance embutido?</p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-4"/>
               </div>
               <div class="divisoria"></div>
 
@@ -524,7 +529,7 @@
                 <p>
                   Como o CIMU lida com lances embutidos e o crédito líquido?
                 </p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-5"/>
               </div>
               <div class="divisoria"></div>
 
@@ -546,7 +551,7 @@
                 <p>
                   É possível simular a partir de um crédito líquido desejado?
                 </p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-6"/>
               </div>
               <div class="divisoria"></div>
 
@@ -566,7 +571,7 @@
                   Como o CIMU considera o número de parcelas pagas até a
                   contemplação?
                 </p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-7"/>
               </div>
               <div class="divisoria"></div>
 
@@ -589,7 +594,7 @@
                   Como o CIMU diferencia entre administradoras nas simulações de
                   crédito líquido?
                 </p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-8"/>
               </div>
               <div class="divisoria"></div>
 
@@ -606,7 +611,7 @@
               <div class="pergunta" onclick="toggleAnswer(9)">
                 <p>Posso comparar diferentes cenários com o CIMU?
                 </p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-9"/>
               </div>
               <div class="divisoria"></div>
 
@@ -625,7 +630,7 @@
                 <p>
                   O CIMU é atualizado conforme as mudanças nas administradoras?
                 </p>
-                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" />
+                <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-10"/>
               </div>
               <div class="divisoria"></div>
 
@@ -806,18 +811,20 @@ document.addEventListener('click', (event) => {
     menuEscondido.classList.add('escondido');
   }
 });
-    function toggleAnswer(id) {
-      var descricao = document.getElementById("descricao-" + id);
+function toggleAnswer(id) {
+  var descricao = document.getElementById("descricao-" + id);
+  var toggleIcon = document.getElementById("toggle-" + id);
 
-      if (
-        descricao.style.display === "none" ||
-        descricao.style.display === ""
-      ) {
-        descricao.style.display = "flex";
-      } else {
-        descricao.style.display = "none";
-      }
-    }
+  // Alternar a exibição da descrição
+  if (descricao.style.display === "none" || descricao.style.display === "") {
+    descricao.style.display = "block"; // Mostra a descrição
+    toggleIcon.style.transform = "rotate(45deg)"; // Aplica a rotação
+  } else {
+    descricao.style.display = "none"; // Esconde a descrição
+    toggleIcon.style.transform = "rotate(0deg)"; // Volta à rotação original
+  }
+}
+
   </script>
 </body>
 

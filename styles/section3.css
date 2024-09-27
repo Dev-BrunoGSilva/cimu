@@ -27,6 +27,10 @@ section:nth-child(3) .apresentacao h1 {
   text-wrap: nowrap;
 }
 
+.toggle-icon{
+  transition: transform 0.3s ease;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
