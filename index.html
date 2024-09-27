@@ -11,6 +11,9 @@
 </head>
 
 <body>
+  <div id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">
+    <img style="scale: 1.4;" src="./assets/icons/up-arrow.png" alt="">
+</div>
   <div class="menu-escondido escondido">
     <a href="#beneficios">Beneficios</a>
     <a href="#planos">Planos</a>
@@ -454,7 +457,7 @@
         <p>Tire as principais dúvidas sobre a plataforma digital</p>
         <div class="duvidas">
           <div class="link">
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-1">
               <div class="pergunta" onclick="toggleAnswer(1)">
                 <p>O que é o CIMU?</p>
                 <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-1"/>
@@ -472,7 +475,7 @@
               </div>
             </div>
 
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-2">
               <div class="pergunta" onclick="toggleAnswer(2)">
                 <p>Como o CIMU calcula os valores dos consórcios?</p>
                 <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-2"/>
@@ -488,7 +491,7 @@
               </div>
             </div>
 
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-3">
               <div class="pergunta" onclick="toggleAnswer(3)">
                 <p>
                   O CIMU leva em conta as diferenças entre as administradoras?
@@ -507,7 +510,7 @@
               </div>
             </div>
 
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-4">
               <div class="pergunta" onclick="toggleAnswer(4)">
                 <p>Como o CIMU trata o lance embutido?</p>
                 <img class="toggle-icon" src="./assets/icons/add_circle.png" alt="abrir sessão" id="toggle-4"/>
@@ -524,7 +527,7 @@
               </div>
             </div>
 
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-5">
               <div class="pergunta" onclick="toggleAnswer(5)">
                 <p>
                   Como o CIMU lida com lances embutidos e o crédito líquido?
@@ -546,7 +549,7 @@
           </div>
 
           <div class="link">
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-6">
               <div class="pergunta" onclick="toggleAnswer(6)">
                 <p>
                   É possível simular a partir de um crédito líquido desejado?
@@ -565,7 +568,7 @@
               </div>
             </div>
 
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-7">
               <div class="pergunta" onclick="toggleAnswer(7)">
                 <p>
                   Como o CIMU considera o número de parcelas pagas até a
@@ -588,7 +591,7 @@
               </div>
             </div>
 
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-8">
               <div class="pergunta" onclick="toggleAnswer(8)">
                 <p>
                   Como o CIMU diferencia entre administradoras nas simulações de
@@ -607,7 +610,7 @@
               </div>
             </div>
 
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-9">
               <div class="pergunta" onclick="toggleAnswer(9)">
                 <p>Posso comparar diferentes cenários com o CIMU?
                 </p>
@@ -625,7 +628,7 @@
               </p>
             </div>
 
-            <div class="duvida-caixa">
+            <div class="duvida-caixa" id="duvidaCaixa-10">
               <div class="pergunta" onclick="toggleAnswer(10)">
                 <p>
                   O CIMU é atualizado conforme as mudanças nas administradoras?
@@ -771,13 +774,16 @@
 
         <div class="navegacao">
           <p>Fale conosco</p>
-          <p>
+          <p class="p-footer">
             <i><img style="width: 1rem" src="./assets/icons/Phone-1.png" alt="" /></i>(11) 91578 - 8189
           </p>
-          <p>
+          <p class="p-footer">
             <i><img style="width: 1rem" src="./assets/icons/Phone.png" alt="" /></i>(11) 5198 - 3288
           </p>
-          <p>
+          <p class="p-footer">
+            <i><img style="width: 1rem" src="./assets/icons/envelope.png" alt="" /></i>contato@cimu.com.br
+          </p>
+          <p class="p-footer">
             <i><img style="width: 1rem" src="./assets/icons/location_on.png" alt="" /></i>AVENIDA PAULISTA, 1471 CONJ
             1110
           </p>
@@ -787,7 +793,8 @@
     </div>
     <div class="divisoria"></div>
     <div class="direitos" style="text-align: center;">
-      <h5>CIMU CONSORCIO LTDA |CNPJ: 55.121.424/0001-04</h5>
+      <h5>CIMU CONSORCIO LTDA</h5>
+      <p>CNPJ: 55.121.424/0001-04</p>
       <h5>Todos os direitos reservados</h5>
     </div>
   </footer>
@@ -811,19 +818,51 @@ document.addEventListener('click', (event) => {
     menuEscondido.classList.add('escondido');
   }
 });
+
 function toggleAnswer(id) {
   var descricao = document.getElementById("descricao-" + id);
   var toggleIcon = document.getElementById("toggle-" + id);
+  var duvidaCaixa = document.getElementById("duvidaCaixa-" + id);
 
-  // Alternar a exibição da descrição
-  if (descricao.style.display === "none" || descricao.style.display === "") {
-    descricao.style.display = "block"; // Mostra a descrição
-    toggleIcon.style.transform = "rotate(45deg)"; // Aplica a rotação
-  } else {
-    descricao.style.display = "none"; // Esconde a descrição
+  if (descricao.style.maxHeight) {
+    descricao.style.maxHeight = null; // Esconde a descrição
+    descricao.style.opacity = 0; // Define a opacidade para 0
+    duvidaCaixa.style.backgroundColor = 'transparent'; // Remove a cor de fundo
     toggleIcon.style.transform = "rotate(0deg)"; // Volta à rotação original
+  } else {
+    descricao.style.maxHeight = descricao.scrollHeight + "px"; // Ajusta a altura máxima para a altura do conteúdo
+    descricao.style.opacity = 1; // Define a opacidade para 1
+    duvidaCaixa.style.backgroundColor = '#f5f5f5'; // Define a cor de fundo desejada
+    toggleIcon.style.transform = "rotate(45deg)"; // Aplica a rotação
   }
 }
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Animação suave
+    });
+}
+
+// Mostra/oculta o ícone de rolagem para cima
+window.onscroll = function() {
+    var scrollToTop = document.getElementById("scrollToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTop.classList.add("show"); // Adiciona classe para mostrar
+    } else {
+        scrollToTop.classList.remove("show"); // Remove classe para esconder
+    }
+};
+
+// Esconde o ícone ao chegar ao topo
+window.addEventListener('scroll', function() {
+    var scrollToTop = document.getElementById("scrollToTop");
+    if (document.body.scrollTop === 0 && document.documentElement.scrollTop === 0) {
+        scrollToTop.classList.add("hide"); // Adiciona classe para esconder
+    } else {
+        scrollToTop.classList.remove("hide"); // Remove classe para mostrar
+    }
+});
 
   </script>
 </body>

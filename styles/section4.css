@@ -14,7 +14,7 @@
 }
 
 #duvidas .descricao {
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   text-align: start;
 }
 
@@ -115,7 +115,6 @@
 }
 
 .duvida-caixa {
-  background-color: #f5f5f5;
   /* margin-bottom: 3rem; */
   border-radius: 0.5rem;
 }

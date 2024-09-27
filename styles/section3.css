@@ -106,8 +106,16 @@ section:nth-child(3) .apresentacao h1 {
   fill: #4ca28b !important;
 }
 
+.duvida-caixa {
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+
 .descricao {
-  display: none;
+  max-height: 0; /* Começa com altura 0 */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa o limite */
+  opacity: 0; /* Começa com opacidade 0 */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Transições para max-height e opacidade */
 }
 
 .action {

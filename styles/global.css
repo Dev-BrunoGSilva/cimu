@@ -18,6 +18,17 @@ html {
   /* outline: 1px solid red; */
 }
 
+.p-footer{
+  display: flex;
+  justify-content:flex-start;
+  align-itens:center;
+  gap: 0.5rem;
+}
+
+.p-footer i{
+  margin-top:2px;
+}
+
 .menu-escondido:not(.escondido) {
   transform: translateX(0) !important; /* Menu visível */
 }
@@ -646,4 +657,31 @@ a .button-entrar {
   /* section{
         background-color: slateblue;
     } */
+}
+
+.scroll-to-top {
+  position: fixed;
+  z-index:10;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00000090; /* Cor de fundo do ícone */
+  color: white; /* Cor do texto */
+  border-radius: 50%; /* Forma circular */
+  width: 50px; /* Largura do ícone */
+  height: 50px; /* Altura do ícone */
+  display: none; /* Começa oculto */
+  justify-content: center; /* Centraliza o texto */
+  align-items: center; /* Centraliza o texto */
+  font-size: 24px; /* Tamanho do texto */
+  cursor: pointer; /* Muda o cursor para pointer */
+  transition: opacity 0.3s ease; /* Transição suave para opacidade */
+}
+
+.scroll-to-top.show {
+  display: flex; /* Mostra o ícone */
+  opacity: 1; /* Opacidade total */
+}
+
+.scroll-to-top.hide {
+  opacity: 0; /* Opacidade 0 (invisível) */
 }
