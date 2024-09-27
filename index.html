@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="menu-escondido">
+  <div class="menu-escondido escondido">
     <a href="#beneficios">Beneficios</a>
     <a href="#planos">Planos</a>
     <a href="#administradoras">Administradoras</a>
@@ -788,23 +788,24 @@
   </footer>
 
   <script>
-    const menuEscondido = document.querySelector('.menu-escondido');
-    const responsiveMenu = document.querySelector('.responsive-menu');
+const menuEscondido = document.querySelector('.menu-escondido');
+const responsiveMenu = document.querySelector('.responsive-menu');
 
-    // Mostrar o menu ao clicar no botão
-    responsiveMenu.addEventListener('click', () => {
-      menuEscondido.style.display = 'fixed';
-    });
+// Alterna a classe 'escondido' ao clicar no botão
+responsiveMenu.addEventListener('click', (event) => {
+  event.stopPropagation(); // Impede o clique de propagar para o documento
+  menuEscondido.classList.toggle('escondido');
+});
 
-    // Esconder o menu ao clicar fora dele
-    document.addEventListener('click', (event) => {
-      const isClickInsideMenu = menuEscondido.contains(event.target);
-      const isClickOnMenuButton = responsiveMenu.contains(event.target);
+// Esconder o menu ao clicar fora dele
+document.addEventListener('click', (event) => {
+  const isClickInsideMenu = menuEscondido.contains(event.target);
+  const isClickOnMenuButton = responsiveMenu.contains(event.target);
 
-      if (!isClickInsideMenu && !isClickOnMenuButton) {
-        menuEscondido.style.display = 'none';
-      }
-    });
+  if (!isClickInsideMenu && !isClickOnMenuButton) {
+    menuEscondido.classList.add('escondido');
+  }
+});
     function toggleAnswer(id) {
       var descricao = document.getElementById("descricao-" + id);
 

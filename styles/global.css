@@ -14,8 +14,8 @@
   /* outline: 1px solid red; */
 }
 
-.menu-escondido{
-  display: none;
+.menu-escondido:not(.escondido) {
+  transform: translateX(0) !important; /* Menu visível */
 }
 
 .buttons {
@@ -246,13 +246,18 @@ a .button-entrar {
 
 @media only screen and (max-width: 320px) {
   /* Seu CSS para celulares pequenos */
-  /* section{
-        background-color: red;
-    } */
+  
+    header nav {
+      display: none;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   /* Seu CSS para celulares */
+  header nav {
+    display: none;
+  }
+
   header div img {
     margin-right: 0;
   }
@@ -279,7 +284,7 @@ a .button-entrar {
   /* .card-bene img{
     width: 15rem !important;
   } */
-  .menu-escondido{
+  .menu-escondido {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -293,14 +298,24 @@ a .button-entrar {
     gap: 4rem;
     color: white;
     background-color: #00000099;
+    transition: transform 0.3s ease; /* Animação suave */
+    transform: translateX(-100%); /* Menu escondido fora da tela à esquerda */
   }
-
-  .menu-escondido a{
+  
+  .menu-escondido.escondido {
+    transform: translateX(-100%); /* Mantém fora da tela */
+  }
+  
+  .menu-escondido:not(.escondido) {
+    transform: translateX(0); /* Menu visível */
+  }
+  
+  .menu-escondido a {
     color: white;
     font-size: large;
     font-weight: bold;
   }
-
+  
   .responsive-menu {
     width: 0;
     display: block;
@@ -310,7 +325,7 @@ a .button-entrar {
     margin: 0.5rem 3.3rem;
     cursor: pointer;
   }
-
+  
   .responsive-menu img {
     width: 3rem !important;
     object-fit: cover;
@@ -499,18 +514,27 @@ a .button-entrar {
     text-align: center;
   }
   
-  /* section{
+  section{
         background-color: blue;
-    } */
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* Seu CSS para tablets */
+  
+  section{
+    background-color: yellow;
+  }
+
   header nav {
     display: none;
   }
 
-  .menu-escondido{
+/* --------------------------------------- */
+.menu-escondido{
+  transform: translateX(0);
+}
+  .menu-escondido {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -524,32 +548,45 @@ a .button-entrar {
     gap: 4rem;
     color: white;
     background-color: #00000099;
+    transition: transform 0.3s ease; /* Animação suave */
+    transform: translateX(-100%); /* Menu escondido fora da tela à esquerda */
   }
+  
+  .menu-escondido.escondido {
+    transform: translateX(-100%); /* Mantém fora da tela */
+  }
+  
+  .menu-escondido:not(.escondido) {
+    transform: translateX(0); /* Menu visível */
+  }
+  
+  .menu-escondido a {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .responsive-menu {
+    width: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5rem 3.3rem;
+    cursor: pointer;
+  }
+  
+  .responsive-menu img {
+    width: 3rem !important;
+    object-fit: cover;
+  }
+/* --------------------------------------- */
 
   section .apresentacao,
   .card-group {
     flex-direction: column;
   }
 
-  /* section{
-        background-color: yellow;
-    } */
-
-    .menu-escondido{
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      width: 75%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 4rem;
-      color: white;
-      background-color: #00000099;
-    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -559,36 +596,31 @@ a .button-entrar {
     display: none;
   } */
 
+  .responsive-menu {
+    display: none;
+  }
+
   .menu-escondido{
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    color: white;
-    background-color: #00000099;
+    display: none;
   }
 
   .apresentacao {
     padding: 1rem 2rem !important;
   }
 
-  /* section{
+  section{
         background-color: green;
-    } */
+    }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   /* Seu CSS para telas grandes */
-  /* section{
+  .menu-escondido{
+    display: none;
+  }
+  section{
         background-color: purple;
-    } */
+    }
     section:nth-child(3) .apresentacao{
       padding: 4rem 15rem;
     }
@@ -596,6 +628,10 @@ a .button-entrar {
 
 @media only screen and (min-width: 1201px) {
   /* Seu CSS para desktops grandes */
+  .menu-escondido{
+    display: none;
+  }
+
   #duvidas {
     padding: 0 20rem;
   }
@@ -603,7 +639,7 @@ a .button-entrar {
   section:nth-child(3) .apresentacao{
     padding: 4rem 20rem;
   }
-  /* section{
+  section{
         background-color: slateblue;
-    } */
+    }
 }
