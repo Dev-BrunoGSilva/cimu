@@ -514,9 +514,9 @@ a .button-entrar {
     text-align: center;
   }
   
-  section{
+  /* section{
         background-color: blue;
-    }
+    } */
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -608,9 +608,9 @@ a .button-entrar {
     padding: 1rem 2rem !important;
   }
 
-  section{
+  /* section{
         background-color: green;
-    }
+    } */
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -618,9 +618,9 @@ a .button-entrar {
   .menu-escondido{
     display: none;
   }
-  section{
+  /* section{
         background-color: purple;
-    }
+    } */
     section:nth-child(3) .apresentacao{
       padding: 4rem 15rem;
     }
@@ -639,7 +639,7 @@ a .button-entrar {
   section:nth-child(3) .apresentacao{
     padding: 4rem 20rem;
   }
-  section{
+  /* section{
         background-color: slateblue;
-    }
+    } */
 }
